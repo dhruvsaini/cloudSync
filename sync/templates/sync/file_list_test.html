@@ -1,0 +1,12 @@
+<html>
+{% load static %}
+
+<body data-media-url="{% get_media_prefix %}">
+{{user}}
+<h1>Files</h1>
+<ul>
+    {% for f in files %}
+    <li><a href = "{{f.file}}">{{f.file}}</a></li>
+    {% endfor %}
+</ul>
+</body></html>
